@@ -12,7 +12,6 @@ class IndexView(generic.ListView):
         '''Return the events.'''
         return Event.objects.all()
 
-
 class EventView(generic.DetailView):
     model = Event
     template_name = 'eventFinderApp/event.html'

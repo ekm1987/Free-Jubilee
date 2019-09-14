@@ -4,8 +4,13 @@
 
 <h2>{{ event.title }}</h2>
 
-<p>{{ event.location }}</p>
+<p>Suburb: {{ event.location }}</p>
 <p>Starts at: {{ event.start_time }}</p>
 <p>Ends at: {{ event.end_time }}</p>
+<p>Venue: {{ event.venue }}</p>
+<p>Categories:
+    {% for cat in event.categories.all %}
+    {{ cat.name }}</p>
+    {% endfor %}
 
 {% endblock %}
