@@ -18,5 +18,8 @@ from django.urls import include, path
 
 urlpatterns = [
     path('event-finder/', include('eventFinderApp.urls')),
+    path('signup/', include('eventFinderApp.urls')),
+    path('account_activation_sent/', include('eventFinderApp.urls')),
+    path('activate/', include('eventFinderApp.urls')),
     path('admin/', admin.site.urls),
 ]
