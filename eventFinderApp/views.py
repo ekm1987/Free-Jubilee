@@ -63,4 +63,4 @@ def account(request):
     return render(request, 'users/account.html')
 
 def signup(request):
-    return render(request, 'eventFinderProject/signup.html')
+    return render(request, 'users/signup.html')
