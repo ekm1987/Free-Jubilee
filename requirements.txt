@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 appdirs==1.4.0
 astroid==2.2.5
 colorama==0.4.1
@@ -17,3 +18,7 @@ six==1.10.0
 sqlparse==0.3.0
 typed-ast==1.4.0
 wrapt==1.11.2
+=======
+django==2.2.4
+psycopg2==2.8.3
+>>>>>>> django-2.2.4
