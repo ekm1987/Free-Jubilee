@@ -6,4 +6,5 @@ app_name = 'users'
 urlpatterns = [
     # users/1
     path('<int:pk>/', views.AccountView.as_view(), name='account'),
+    path('signup/', views.Register.as_view(), name='signup'),
 ]

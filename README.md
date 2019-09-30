@@ -1,4 +1,4 @@
-# Free Event Finder App Template
+# Free Jubilee App Template
 
 To get started with this template:
 
@@ -16,7 +16,7 @@ To configure the database:
 4. Type `\q` to escape the psql shell.
 5. Create a new superuser - you should be familiar with how to do this (hint, it was in the django tutorial :) )
 6. Then update the settings.py to use whatever you just named your database and your username.
-7. Type `python3 manage.py runserver` and open up http://localhost:8000/event-finder/ to confirm all is well!
+7. Type `python3 manage.py runserver` and open up http://localhost:8000/free-jubilee/ to confirm all is well!
 
 Once you are set up and ready to go, these are your tasks:
 

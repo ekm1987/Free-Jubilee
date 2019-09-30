@@ -2,10 +2,16 @@
 
 {% block content %}
 
-<form method="post" novalidate>
-    {% csrf_token %}
-    {{ form.as_p }}
-    <button type="submit" value="Update" class="btn btn-primary">Login</button>
-</form>
+    <div class="container">
+
+        <form method="post" novalidate>
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit" href="/login.html" value="Update" class="btn btn-primary">Login</button>
+        </form>
+
+    <a href="{% url '\free-jubilee/signup/' %}">New to My Site? Sign up</a>
+
+    </div>
 
 {% endblock %}

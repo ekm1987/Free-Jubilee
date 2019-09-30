@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    <button type="submit" href="/createEvent.html" value="Update" class="btn btn-primary" id="new-event">+ Create New Jubilee</button>
+
+    <h2>Welcome {{ user.get_full_name }} <small>{{ user.username }}</small>!</h2>
+    
+    {% if events_list %}
+        {% for event in events_list %}
+            {% include "./detailsBox.html" with event=event %}
+        {% endfor %}
+    {% else %}
+        <p>No Jubilees are available.</p>
+    {% endif %}
+
+{% endblock %}
