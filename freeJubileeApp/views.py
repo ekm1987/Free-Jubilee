@@ -14,6 +14,8 @@ from django.urls import reverse_lazy
 from .models import Event
 from .forms import EventForm
 from .tokens import account_activation_token
+from bootstrap_datepicker_plus import DateTimePickerInput
+
 
 
 
@@ -49,7 +51,7 @@ class AddEventView(generic.CreateView):
     form_class = EventForm
     context_object_name = 'eventform'
     template_name = 'freeJubileeApp/createEvent.html'
-    success_url = reverse_lazy('freeJubileeApp  :index')
+    success_url = reverse_lazy('freeJubileeApp:index')
 
 
     def form_valid(self, form):

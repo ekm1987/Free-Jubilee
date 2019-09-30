@@ -2,7 +2,7 @@ from django.urls import reverse_lazy
 from django.views import generic
 from django.shortcuts import render, redirect, get_object_or_404
 from .models import CustomUser
-from .forms import CustomUserCreationForm
+from .forms import CustomUserCreationForm, UserChangeForm
 
 
 
@@ -15,3 +15,8 @@ class Register(generic.CreateView):
   form_class = CustomUserCreationForm
   success_url = reverse_lazy('signup')
   template_name = 'register.html'
+
+class ChangeUser(generic.UpdateView):
+  form_class = UserChangeForm
+  success_url = reverse_lazy('changeUser')
+  template_name = 'changeUser.html'
