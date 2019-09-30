@@ -12,6 +12,4 @@ urlpatterns = [
     path('new-event/', views.AddEventView.as_view(), name='newEvent'),
     # free-jubilee/my-account
     path('my-account/', views.account, name='account'),
-    # free-jubilee/signup
-    path('signup/', views.signup, name='signup'),
     ]

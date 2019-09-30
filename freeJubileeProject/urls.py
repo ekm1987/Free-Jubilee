@@ -32,7 +32,6 @@ urlpatterns = [
     path('free-jubilee/', include('freeJubileeApp.urls'), name='freeJubileeApp'),
     path('users/', include('users.urls'), name='users'),
     path('users/', include('django.contrib.auth.urls')),
-    path('accounts/', include('django.contrib.auth.urls')),
     path('admin/', admin.site.urls),
     path('api/', include(router.urls)),
     path(r'api-auth-token/', views.obtain_auth_token),

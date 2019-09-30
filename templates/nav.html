@@ -1,10 +1,11 @@
 <nav>
     {% if user.is_authenticated %}
     <p>Hi {{ user.username }}</p>
+    <a href="{% url 'freeJubileeApp:index' %}">Home</a>
+    <a href="{% url 'freeJubileeApp:account' %}">My Account</a>
     <p><a href="{% url 'logout' %}">Logout</a></p>
 {% else %}
     <p><a href="{% url 'login' %}">Login</a></p>
 {% endif %}
-    <a href="{% url 'freeJubileeApp:index' %}">Home</a>
-    <a href="{% url 'freeJubileeApp:account' %}">My Account</a>
+
 </nav>
