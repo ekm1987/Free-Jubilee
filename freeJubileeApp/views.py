@@ -46,14 +46,11 @@ class EventView(generic.DetailView):
     template_name = 'freeJubileeApp/event.html'
 
 class AddEventView(generic.CreateView):
-    # using the create view we can just give it the variables 
-    # as the functionaity is already built in!
     form_class = EventForm
     context_object_name = 'eventform'
     template_name = 'freeJubileeApp/createEvent.html'
-    success_url = reverse_lazy('freeJubileeProject:index')
-    # we have to use reverse_lazy so that urls.py can load our class
-    # and not get stuck in a recursive loop 
+    success_url = reverse_lazy('freeJubileeApp  :index')
+
 
     def form_valid(self, form):
         form.instance.host = self.request.user
