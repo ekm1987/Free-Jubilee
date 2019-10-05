@@ -1,0 +1,11 @@
+<div class="details-box">
+    <a href="{% url 'freeJubileeApp:event' event.id %}">
+        <p>{{ event.title }}</p>
+        <p>{{ event.start_time }}</p>
+        <div>
+            {% for category in event.categories.all %}
+                <p>{{ category.title }}</p>
+            {% endfor %}
+        </div>
+    </a>
+</div>

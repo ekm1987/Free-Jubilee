@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    {% if user.is_authenticated %}
+        <a href="{% url 'freeJubileeApp:newEvent' %}" ><button type="submit" value="Create" class="btn btn-primary" id="new-event">+ Create New Jubilee</button></a>
+    {% else %}
+        <p>Browse Free Jubilee Events Below</p>
+    {% endif %}
+
+
+    <h2>Welcome {{ user.get_full_name }}!</h2>
+    
+    {% if events_list %}
+        {% for event in events_list %}
+            {% include "./detailsBox.html" with event=event %}
+        {% endfor %}
+    {% else %}
+        <p>No Jubilees are available.</p>
+    {% endif %}
+
+{% endblock %}
+
