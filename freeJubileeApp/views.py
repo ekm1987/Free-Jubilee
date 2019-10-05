@@ -53,7 +53,6 @@ class AddEventView(generic.CreateView):
     template_name = 'freeJubileeApp/createEvent.html'
     success_url = reverse_lazy('freeJubileeApp:index')
 
-
     def form_valid(self, form):
         form.instance.host = self.request.user
         return super().form_valid(form)
