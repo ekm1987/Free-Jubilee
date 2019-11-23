@@ -24,6 +24,10 @@ p {
     color: #ce4a7eff;
 }
 
+label {
+    color: #ce4a7eff;
+}
+
 header {
     display: flex;
     justify-content: space-between;
