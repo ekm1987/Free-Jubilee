@@ -5,30 +5,36 @@ html {
 body {
     margin: 50px;
     font-family: 'Questrial', sans-serif;
+    background-color: #1c1c1bff;
 }
 
 h1 {
     font-size: 3rem;
-    color: #db58ca;
+    color: #ce4a7eff;
     margin: 0;
-    text-shadow: 1px 1px 2px #000, 0 0 1em blueviolet, 0 0 0.2em blueviolet;
+    text-shadow: 1px 1px 2px #1c1c1bff, 0 0 1em blueviolet, 0 0 0.2em blueviolet;
 }
 
 h2 {
     margin: 0;
+    color: #DF6589FF;
+}
+
+p {
+    color: #ce4a7eff;
 }
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid #1c1c1bff;
     margin-bottom: 20px;
 }
 
 nav {
     display: flex;
-    text-decoration: underline overline #000;
+    text-decoration: underline overline #1c1c1bff;
 }
 
 nav a {
@@ -37,7 +43,7 @@ nav a {
 }
 
 a {
-    color: #db58ca;
+    color: #ce4a7eff;
 }
 
 a:hover {
@@ -47,7 +53,7 @@ a:hover {
 
 #new-event {
     width: 100%;
-    background-color: #db58ca;
+    background-color: #ce4a7eff;
     color: #fff;
     border: 1px solid blueviolet;
     border-radius: 5px;
@@ -63,14 +69,14 @@ a:hover {
 }
 
 .details-box {
-    border: 1px solid #db58ca;
+    border: 1px solid #ce4a7eff;
     border-radius: 5px;
     margin: 10px 0;
     padding: 10px;
 }
 
 .details-box a {
-    color: #000 !important;
+    color: #1c1c1bff !important;
     text-decoration: none;
     display: flex;
     justify-content: space-between;
@@ -81,7 +87,7 @@ a:hover {
 }
 
 .btn-primary {
-    background-color: #db58ca;
+    background-color: #ce4a7eff;
     color: #fff;
     border: 1px solid blueviolet;
     border-radius: 5px;
